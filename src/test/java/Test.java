@@ -11,7 +11,8 @@ public class Test {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         driver.get("http://a.testaddressbook.com/sign_in");
-
+        driver.manage().window().maximize();
+        
         //Login
         driver.findElement(By.id("session_email")).sendKeys("www@www.www");
         driver.findElement(By.name("session[password]")).sendKeys("wwwwww");

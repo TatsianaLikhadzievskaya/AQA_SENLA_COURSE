@@ -6,9 +6,9 @@ import java.time.Duration;
 
 public class Test {
     public static void main(String[] args)  {
-        System.setProperty("webdriver.chrome.driver", "E:\\webdriver\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+      System.setProperty("webdriver.chrome.driver", "E:\\webdriver\\chromedriver.exe");
+      WebDriver driver = new ChromeDriver();
+      driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         driver.get("http://a.testaddressbook.com/sign_in");
         driver.manage().window().maximize();
@@ -72,7 +72,6 @@ public class Test {
         //Sign out
         driver.findElement(By.cssSelector("a[data-test='sign-out']")).click();
 
-        driver.close();
         driver.quit();
     }
 }

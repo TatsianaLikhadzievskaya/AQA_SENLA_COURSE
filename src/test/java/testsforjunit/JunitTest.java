@@ -73,7 +73,7 @@ public class JunitTest {
 
     @Test
     @Order(2)
-    public void editAddress(){
+    public void editAddressTest(){
         Log.info("Edit existing address page");
         driver.findElement(ADDRESS_LIST).click();
         driver.findElement(EDIT).click();
@@ -113,7 +113,7 @@ public class JunitTest {
 
     @Test
     @Order(3)
-    public void deleteAddress(){
+    public void deleteAddressTest(){
         Log.info("Delete Address from the Address List");
 
         driver.findElement(ADDRESS_LIST).click();

@@ -35,7 +35,7 @@ public class Junit2Test {
 
     @Test
     @Order(1)
-    public void reviewAddressList(){
+    public void reviewAddressListTest(){
         Log.info("Transfer to Address List");
         driver.findElement(ADDRESS_LIST).click();
 
@@ -45,7 +45,7 @@ public class Junit2Test {
 
     @Test
     @Order(2)
-    public void signOut() {
+    public void signOutTest() {
 
         Log.info("Logout from a.testaddressbook.com");
 

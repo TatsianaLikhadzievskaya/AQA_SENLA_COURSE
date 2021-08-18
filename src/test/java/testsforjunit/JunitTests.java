@@ -36,7 +36,7 @@ public class JunitTests {
 
     @Test
     @Order(1)
-    public void addAddress(){
+    public void testAddAddress(){
         Log.info("Сreate new address page");
         driver.findElement(ADDRESS_LIST).click();
         driver.findElement(NEW_ADDRESS).click();

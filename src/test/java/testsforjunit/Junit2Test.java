@@ -16,7 +16,7 @@ public class Junit2Test {
 
     private WebDriver driver = Driver.getChromeDriver();
 
-    @BeforeAll
+    @BeforeEach
     public void setUp(){
 
         Log.info("Open a.testaddressbook.com");

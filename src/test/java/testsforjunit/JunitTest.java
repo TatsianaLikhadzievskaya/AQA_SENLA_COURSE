@@ -13,7 +13,7 @@ import static locators.MainPageLocators.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 
-public class JunitTests {
+public class JunitTest {
 
     private WebDriver driver = Driver.getChromeDriver();
 

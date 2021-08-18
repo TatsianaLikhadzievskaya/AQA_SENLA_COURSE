@@ -12,7 +12,7 @@ import static locators.MainPageLocators.*;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 
-public class JunitTests2 {
+public class Junit2Test {
 
     private WebDriver driver = Driver.getChromeDriver();
 

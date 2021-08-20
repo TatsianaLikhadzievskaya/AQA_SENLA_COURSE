@@ -1,5 +1,6 @@
 package testsforjunit;
 
+import io.qameta.allure.*;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Alert;
@@ -34,6 +35,13 @@ public class JunitTest {
         driver.findElement(SIGN_IN).click();
     }
 
+    @Step("Fill address fields on new address page")
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Create new address test")
+    @Feature("New address creation")
+    @Story("Create")
+    @Epic("Address page")
+    @Issue("TC-001")
     @Test
     @Order(1)
     public void addAddressTest(){
@@ -71,6 +79,13 @@ public class JunitTest {
         Assertions.assertEquals("(212)737-2344", pagePhone, "created phone is not correct");
     }
 
+    @Step("Edit address fields on address page")
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Edit address test")
+    @Feature("Address page editing")
+    @Story("Edit")
+    @Epic("Address page")
+    @Issue("TC-002")
     @Test
     @Order(2)
     public void editAddressTest(){
@@ -110,7 +125,13 @@ public class JunitTest {
 
     }
 
-
+    @Step("Delete address from the address list")
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Delete address test")
+    @Feature("Address deletion from address list")
+    @Story("Delete")
+    @Epic("Address list")
+    @Issue("TC-003")
     @Test
     @Order(3)
     public void deleteAddressTest(){

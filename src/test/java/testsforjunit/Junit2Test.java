@@ -1,6 +1,6 @@
 package testsforjunit;
 
-
+import io.qameta.allure.*;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -33,6 +33,14 @@ public class Junit2Test {
         driver.findElement(SIGN_IN).click();
     }
 
+    @Step("Review address from the address list")
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Review address list test")
+    @Feature("Address list review")
+    @Story("Review")
+    @Epic("Address list")
+    @Link("http://a.testaddressbook.com/addresses")
+    @Issue("TC-004")
     @Test
     @Order(1)
     public void reviewAddressListTest(){
@@ -43,6 +51,14 @@ public class Junit2Test {
         Assertions.assertEquals("http://a.testaddressbook.com/addresses", currentUrl, "could not show addresses");
     }
 
+    @Step("Sign out from the addressbook")
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Sign out test")
+    @Feature("Signing out check")
+    @Story("Sign out")
+    @Epic("User signout")
+    @Link("http://a.testaddressbook.com/sign_in")
+    @Issue("TC-005")
     @Test
     @Order(2)
     public void signOutTest() {
